@@ -11,7 +11,7 @@
 <body>
   <div id="vue-app">
     <p>My age is: {{age}}</p>
-    <button @click="add(1)">Add a year</button>
+    <button @click.once="add(1)">Add a year (with .once modifier)</button>
     <button @click="subtract(1)">Subtract a year</button>
     <button @dblclick="add(50)">Add 50 years (double click)</button>
     <button @dblclick="subtract(50)">Subtract 50 years (double click)</button>
