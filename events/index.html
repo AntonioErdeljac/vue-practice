@@ -16,6 +16,7 @@
     <button @dblclick="add(50)">Add 50 years (double click)</button>
     <button @dblclick="subtract(50)">Subtract 50 years (double click)</button>
     <div @mousemove="onMove" id="canvas">{{x}}, {{y}}</div>
+    <a v-on:click.prevent="onClick" href="http://www.google.com">Google (with .prevent modifier)</a>
   </div>
   <script src="./app.js"></script>
 </body>

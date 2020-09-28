@@ -18,6 +18,9 @@ new Vue({
 
       this.x = x;
       this.y = y;
+    },
+    onClick: function() {
+      alert('You clicked me.')
     }
   }
 });
