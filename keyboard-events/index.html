@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue keyboard events</title>
+
+    <link rel="stylesheet" href="./styles.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  </head>
+<body>
+  <div id="vue-app">
+    <label>Name: {{values.name}}</label>
+    <input v-model="values.name" type="text" />
+    <label>Age: {{values.age}}</label>
+    <input v-model="values.age" type="text" />
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
