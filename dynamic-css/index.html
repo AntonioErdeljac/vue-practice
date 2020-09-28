@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue dynamic css</title>
+
+    <link rel="stylesheet" href="./styles.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  </head>
+<body>
+  <div id="vue-app">
+    <button @click="available = !available">Toggle availability</button>
+    <div id="taxi" :class="getClass">
+      Taxi #1
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.available {
+  background-color: green !important;
+}
+
+#taxi {
+  margin-top: 10px;
+  background-color: red;
+  padding: 10px;
+  border: 1px solid black;
+}
