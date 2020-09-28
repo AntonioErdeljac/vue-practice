@@ -14,6 +14,8 @@
     <h1>{{name}}</h1>
     <p>job: {{job}}</p>
     <a v-bind:href="website">Website</a>
+    <p v-html="websiteTag"></p>
+    <input type="text" v-bind:value="name" />
   </div>
   <script src="./app.js"></script>
 </body>
