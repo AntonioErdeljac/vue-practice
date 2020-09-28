@@ -1,6 +1,7 @@
 new Vue({
   el: '#vue-app',
   data: {
-    name: 'Vue app'
+    name: 'Vue app',
+    job: 'test',
   }
 });
