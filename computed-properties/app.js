@@ -6,7 +6,7 @@ new Vue({
     age: 20,
   },
   methods: {
-    addTo: function (value) {
+    compute: function (value) {
       return this[value] + this.age;
     }
   }
