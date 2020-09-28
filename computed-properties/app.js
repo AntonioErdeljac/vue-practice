@@ -5,9 +5,12 @@ new Vue({
     b: 0,
     age: 20,
   },
-  methods: {
-    compute: function (value) {
-      return this[value] + this.age;
+  computed: {
+    computeA: function () {
+      return this.a + this.age;
+    },
+    computeB: function () {
+      return this.b + this.age;
     }
   }
 });
