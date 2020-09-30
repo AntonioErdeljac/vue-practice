@@ -11,11 +11,19 @@
 <body>
   <div id="vue-app">
     <ul>
-      <li v-for="character in characters">{{character}}</li>
+      <li v-for="(character, index) in characters">{{character}} - {{index}}</li>
     </ul>
     <ol>
-      <li v-for="user in users">{{user.name}} is {{user.age}} years old</li>
+      <li v-for="(user, index) in users">{{user.name}} is {{user.age}} years old, and its  position in array is {{index}}</li>
     </ol>
+    <template v-for="user in users">
+      <h3>{{user.name}}</h3>
+    </template>
+    <template v-for="user in users">
+      <div v-for="(value, key) in user">
+        {{key}}:{{value}}
+      </div>
+    </template>
   </div>
   <script src="./app.js"></script>
 </body>
