@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue looping</title>
+
+    <link rel="stylesheet" href="./styles.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  </head>
+<body>
+  <div id="vue-app">
+    <ul>
+      <li v-for="character in characters">{{character}}</li>
+    </ul>
+    <ol>
+      <li v-for="user in users">{{user.name}} is {{user.age}} years old</li>
+    </ol>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
