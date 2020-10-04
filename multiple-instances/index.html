@@ -9,7 +9,15 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
   </head>
 <body>
-  <div id="vue-app">
+  <div id="vue-app-one">
+    <h1>{{title}}</h1>
+    {{greet}}
+  </div>
+  <hr />
+  <div id="vue-app-two">
+    <h1>{{title}}</h1>
+    {{greet}}
+    <button @click="changeTitle">Change App #1 title</button>
   </div>
   <script src="./app.js"></script>
 </body>
